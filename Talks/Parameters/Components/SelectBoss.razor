@@ -1,0 +1,10 @@
+﻿<div>
+    <select @onchange="ChangeSelection">
+        <option>Seleccionar empleado</option>
+        @foreach (var emp in employees)
+        {
+            <option value="@emp.Id">@emp.Name</option>
+        }
+    </select>
+</div>
+@BossId
